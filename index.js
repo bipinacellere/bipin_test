@@ -9,6 +9,6 @@ if (!req.body.lastName || req.body.lastName == "") {
     }
         elseif(1)
         {
-                console.log('Test message2');
+                console.log('Test message3');
                 return false;
         }
