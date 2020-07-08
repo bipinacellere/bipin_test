@@ -11,5 +11,6 @@ if (!req.body.lastName || req.body.lastName == "") {
         {
                 console.log('Test message3');
                 a =100;
+                b=5;
                 return false;
         }
