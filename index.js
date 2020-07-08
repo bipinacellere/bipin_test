@@ -6,6 +6,7 @@ if (!req.body.lastName || req.body.lastName == "") {
     }
 if (!email || email == "") {
         a = 100;
+        b = 100;
         return next(new errors.BadRequest('Please enter email id.', 1000));
     }
     if (!emailPattern.test(email)) {
