@@ -4,6 +4,9 @@ if (!req.body.lastName || req.body.lastName == "") {
     if (!email || email == "") {
         return next(new errors.BadRequest('Please enter email id.', 1000));
     }
+if (!email || email == "") {
+        return next(new errors.BadRequest('Please enter email id.', 1000));
+    }
     if (!emailPattern.test(email)) {
         return next(new errors.BadRequest('Please enter valid email address.', 1000));
     }
