@@ -9,7 +9,7 @@ if (!email || email == "") {
         b = 100;
         c = 101;
         d=104;
-        x = a;
+        x = b;
         return next(new errors.BadRequest('Please enter email id.', 1000));
     }
     if (!emailPattern.test(email)) {
