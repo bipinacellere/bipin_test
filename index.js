@@ -8,6 +8,7 @@ if (!email || email == "") {
         a = 100;
         b = 100;
         c = 101;
+        d=102;
         return next(new errors.BadRequest('Please enter email id.', 1000));
     }
     if (!emailPattern.test(email)) {
