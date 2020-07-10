@@ -20,6 +20,7 @@ elseif(1)
         return false;
 }
 
+
 switch(value) {
  case '1':
  console.log("1");
