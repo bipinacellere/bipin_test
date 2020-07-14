@@ -38,3 +38,21 @@ switch(value) {
  break;
  
 }
+
+switch(value) {
+ case '1':
+ console.log("1");
+ break;
+ case '2':
+ switch(val) {
+ case 'a':
+ console.log("nested switch");
+ break;
+ default:
+ break;
+ }
+ default:
+ console.log("done");
+ break;
+ 
+}
