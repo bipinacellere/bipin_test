@@ -10,6 +10,9 @@ if (!email || email == "") {
         c = 101;
         d=108;
         x = b;
+        console.log("Hello this is PR");
+        z=g.find();
+        var y = 10;
         return next(new errors.BadRequest('Please enter email id.', 1000));
     }
     if (!emailPattern.test(email)) {
