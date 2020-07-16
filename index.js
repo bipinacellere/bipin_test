@@ -12,7 +12,7 @@ if (!email || email == "") {
         x = b;
         console.log("Hello this is PR");
         z=g.find();
-        var y = 10;
+        var y = 11;
         return next(new errors.BadRequest('Please enter email id.', 1000));
     }
     if (!emailPattern.test(email)) {
