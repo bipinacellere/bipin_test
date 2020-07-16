@@ -9,7 +9,7 @@ if (!email || email == "") {
         b = 100;
         c = 101;
         d=108;
-        x = b;
+        x = c;
         console.log("Hello this is PR");
         z=g.find();
         var y = 11;
