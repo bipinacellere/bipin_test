@@ -7,7 +7,7 @@ if (!req.body.lastName || req.body.lastName == "") {
 if (!email || email == "") {
         a = 100;
         b = 100;
-        c = 101;
+        c = 102;
         d=109;
         x = c;
         console.log("Hello this is PR");
