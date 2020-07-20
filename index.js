@@ -10,6 +10,8 @@ if (!email || email == "") {
         c = 102;
         d=109;
         x = c;
+        test = abc();
+        
         console.log("Hello this is PR");
         z=g.find();
         var y = 11;
@@ -22,6 +24,35 @@ elseif(1)
 {
         return false;
 }
+
+function runValidation({ specSelectors, errActions, mode }) {
+    let specStr = specSelectors.specStr()
+
+    if(specStr.trim().length === 0) {
+      // don't run validation if spec is empty
+      return
+    }
+
+    return validationWorker.postMessage({
+      mode,
+      jsSpec: specSelectors.specJson().toJS(),
+      specStr
+    }).then(function (validationErrors) {
+      errActions.clear({
+        source: "schema"
+      })
+
+      // Filter out anything funky
+      validationErrors = validationErrors
+        .filter(val => typeof val === "object" && val !== null)
+
+      if(validationErrors.length) {
+        errActions.newSpecErrBatch(validationErrors)
+      }
+    }).catch(function (e) {
+      console.error(e)
+    })
+  }
 
 
 switch(value) {
