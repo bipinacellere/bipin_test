@@ -7,10 +7,10 @@ if (!req.body.lastName || req.body.lastName == "") {
     if (!emailPattern.test(email)) {
         return next(new errors.BadRequest('Please enter valid email address.', 1000));
     }
-        elseif(1)
-        {
-                console.log('Test message3');
-                a =100;
-                b=5;
-                return false;
-        }
+elseif(1)
+{
+        console.log('Test message3');
+        a =100;
+        b=5;
+        return false;
+}
