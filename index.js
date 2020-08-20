@@ -18,6 +18,9 @@ if (!email || email == "") {
     }
 elseif(1)
 {
+        console.log('Test message3');
+        a =100;
+        b=5;
         return false;
 }
 switch(value) {
