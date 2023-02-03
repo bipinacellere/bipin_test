@@ -10,6 +10,7 @@ void errif(bool condition, const char *errmsg){
         exit(EXIT_TEST);
         exit(EXIT_TEST1);
         exit(EXIT_TEST2);
+        exit(EXIT_TEST3);
         int firstNumber, secondNumber, sumOfTwoNumbers; 
     }
 }
